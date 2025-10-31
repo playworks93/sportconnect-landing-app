@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           User Profiles With Sports Interests
         </button>
         <button 
-          className={activeTab === 'swiping_mechanism_for_matches' ? 'active' : ''}
-          onClick={() => setActiveTab('swiping_mechanism_for_matches')}
+          className={activeTab === 'swipe_to_match_functionality' ? 'active' : ''}
+          onClick={() => setActiveTab('swipe_to_match_functionality')}
         >
-          Swiping Mechanism For Matches
+          Swipe To Match Functionality
         </button>
         <button 
-          className={activeTab === 'in_app_chat_for_communication' ? 'active' : ''}
-          onClick={() => setActiveTab('in_app_chat_for_communication')}
+          className={activeTab === 'event_creation_and_participation' ? 'active' : ''}
+          onClick={() => setActiveTab('event_creation_and_participation')}
         >
-          In App Chat For Communication
+          Event Creation And Participation
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'swiping_mechanism_for_matches' && (
+        {activeTab === 'swipe_to_match_functionality' && (
           <div className="tab-content">
-            <h2>Swiping Mechanism for Matches</h2>
-            <p>Manage your swiping mechanism for matches here.</p>
+            <h2>Swipe to Match Functionality</h2>
+            <p>Manage your swipe to match functionality here.</p>
           </div>
         )}
 
-        {activeTab === 'in_app_chat_for_communication' && (
+        {activeTab === 'event_creation_and_participation' && (
           <div className="tab-content">
-            <h2>In-App Chat for Communication</h2>
-            <p>Manage your in app chat for communication here.</p>
+            <h2>Event Creation and Participation</h2>
+            <p>Manage your event creation and participation here.</p>
           </div>
         )}
       </div>
