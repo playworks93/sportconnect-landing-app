@@ -3,9 +3,9 @@ import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import UserProfile from './components/UserProfile'
 import MatchList from './components/MatchList'
-import ChatWindow from './components/ChatWindow'
-import EventDetails from './components/EventDetails'
-import SearchFilter from './components/SearchFilter'
+import Messaging from './components/Messaging'
+import EventCalendar from './components/EventCalendar'
+import NotificationBell from './components/NotificationBell'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SportConnect</h1>
-          <p className="tagline">Find Your Match Through Sports</p>
+          <p className="tagline">Meet Your Match, Share Your Game</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Profiles with Interests</li>
-          <li>Match Algorithm Based on Sports Preferences</li>
-          <li>Chat and Messaging Functionality</li>
-          <li>Event Creation and RSVP for Local Sports Events</li>
-          <li>Search and Filter by Sport Type</li>
-          <li>User Activity Feed and Notifications</li>
+          <li>User Profile Creation</li>
+          <li>Sports Interests Matching</li>
+          <li>In-App Messaging</li>
+          <li>Event Creation and RSVP</li>
+          <li>User Activity Feed</li>
+          <li>Match Recommendations</li>
           </ul>
         </div>
         <p>&copy; 2025 SportConnect. Built with React + TypeScript + Vite</p>
