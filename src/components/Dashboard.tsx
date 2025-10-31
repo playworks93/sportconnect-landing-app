@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_profiles_with_interests' ? 'active' : ''}
-          onClick={() => setActiveTab('user_profiles_with_interests')}
+          className={activeTab === 'user_profile_creation' ? 'active' : ''}
+          onClick={() => setActiveTab('user_profile_creation')}
         >
-          User Profiles With Interests
+          User Profile Creation
         </button>
         <button 
-          className={activeTab === 'match_algorithm_based_on_sports_preferences' ? 'active' : ''}
-          onClick={() => setActiveTab('match_algorithm_based_on_sports_preferences')}
+          className={activeTab === 'sports_interests_matching' ? 'active' : ''}
+          onClick={() => setActiveTab('sports_interests_matching')}
         >
-          Match Algorithm Based On Sports Preferences
+          Sports Interests Matching
         </button>
         <button 
-          className={activeTab === 'chat_and_messaging_functionality' ? 'active' : ''}
-          onClick={() => setActiveTab('chat_and_messaging_functionality')}
+          className={activeTab === 'in_app_messaging' ? 'active' : ''}
+          onClick={() => setActiveTab('in_app_messaging')}
         >
-          Chat And Messaging Functionality
+          In App Messaging
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_profiles_with_interests' && (
+        {activeTab === 'user_profile_creation' && (
           <div className="tab-content">
-            <h2>User Profiles with Interests</h2>
-            <p>Manage your user profiles with interests here.</p>
+            <h2>User Profile Creation</h2>
+            <p>Manage your user profile creation here.</p>
           </div>
         )}
 
-        {activeTab === 'match_algorithm_based_on_sports_preferences' && (
+        {activeTab === 'sports_interests_matching' && (
           <div className="tab-content">
-            <h2>Match Algorithm Based on Sports Preferences</h2>
-            <p>Manage your match algorithm based on sports preferences here.</p>
+            <h2>Sports Interests Matching</h2>
+            <p>Manage your sports interests matching here.</p>
           </div>
         )}
 
-        {activeTab === 'chat_and_messaging_functionality' && (
+        {activeTab === 'in_app_messaging' && (
           <div className="tab-content">
-            <h2>Chat and Messaging Functionality</h2>
-            <p>Manage your chat and messaging functionality here.</p>
+            <h2>In-App Messaging</h2>
+            <p>Manage your in app messaging here.</p>
           </div>
         )}
       </div>
