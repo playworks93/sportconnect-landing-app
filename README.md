@@ -5,11 +5,11 @@ SportConnect - Built with React + TypeScript + Vite
 ## Features
 
 - User Profiles with Sports Interests
-- Swiping Mechanism for Matches
-- In-App Chat for Communication
-- Event Integration for Local Sports Outings
-- Sports-Related Forums and Discussions
-- Personalized Match Recommendations
+- Swipe to Match Functionality
+- Event Creation and Participation
+- Chat and Messaging System
+- Activity Feed and Community Posts
+- Personalized Sport Recommendations
 
 ## Tech Stack
 
